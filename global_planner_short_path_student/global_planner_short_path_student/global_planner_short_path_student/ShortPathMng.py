@@ -22,7 +22,6 @@ from tf2_ros.buffer import Buffer
 from tf2_ros.transform_listener import TransformListener 
 
 from rclpy.duration import Duration
- 
 
 from global_planner_short_path_student.ShortPathMethods.WaveFront import WaveFront
 from global_planner_short_path_student.ShortPathMethods.Dijkstra import Dijsktra
@@ -43,7 +42,7 @@ class ShortPathMng(Node):
     tflistener = ""
     MAX_VALUE = 1000000
 
-    def __init__(self, resolution=4, shortPathMethod='GREEDY_BEST_FIRST_SEARCH', isLocalPlanner=False, inflate_radius=0.3):
+    def __init__(self, resolution=4, shortPathMethod='DIJKSTRA', isLocalPlanner=False, inflate_radius=0.3):
         super().__init__('short_path_mng_node') # Call the constructor of the parent with the node name
         # init params
         self.shortPathMethodeSelected = shortPathMethod
@@ -103,7 +102,6 @@ class ShortPathMng(Node):
         #self.navigator.waitUntilNav2Active()
 
         self.get_logger().info('[ShortPathMng] Started......')
-
 
     def mapCallback(self, data):
         self.map_width = data.info.width
@@ -171,6 +169,16 @@ class ShortPathMng(Node):
                             new_inflated_map[current_index_y + j][current_index_x - i] = self.MAP_OBSTACLE_VALUE
                         j += 1
                     i += 1
+                    if (i == radius and j == radius):
+                        if current_index_y + j < self.map_height and current_index_x + i < self.map_width and not new_inflated_map[current_index_y + j][current_index_x + i] == self.MAP_OBSTACLE_VALUE:
+                            new_inflated_map[current_index_y + j][current_index_x + i] = 5
+                        if current_index_y - j >= 0 and current_index_x - i >= 0 and not new_inflated_map[current_index_y - j][current_index_x - i] == self.MAP_OBSTACLE_VALUE:
+                            new_inflated_map[current_index_y - j][current_index_x - i] = 5
+                        if current_index_y - j >= 0  and current_index_x + i < self.map_width and not new_inflated_map[current_index_y - j][current_index_x + i] == self.MAP_OBSTACLE_VALUE:
+                            new_inflated_map[current_index_y - j][current_index_x + i] = 5
+                        if current_index_y + j < self.map_height and current_index_x - i >= 0 and not new_inflated_map[current_index_y + j][current_index_x - i] == self.MAP_OBSTACLE_VALUE:
+                            new_inflated_map[current_index_y + j][current_index_x - i] = 5
+                
         return new_inflated_map
 
     def resizeWithResolution(self, map, resolution):
