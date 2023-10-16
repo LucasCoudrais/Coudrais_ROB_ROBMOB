@@ -1,0 +1,62 @@
+running egg_info
+creating build/gazebo_sim_nav/gazebo_sim_nav.egg-info
+writing build/gazebo_sim_nav/gazebo_sim_nav.egg-info/PKG-INFO
+writing dependency_links to build/gazebo_sim_nav/gazebo_sim_nav.egg-info/dependency_links.txt
+writing entry points to build/gazebo_sim_nav/gazebo_sim_nav.egg-info/entry_points.txt
+writing requirements to build/gazebo_sim_nav/gazebo_sim_nav.egg-info/requires.txt
+writing top-level names to build/gazebo_sim_nav/gazebo_sim_nav.egg-info/top_level.txt
+writing manifest file 'build/gazebo_sim_nav/gazebo_sim_nav.egg-info/SOURCES.txt'
+reading manifest file 'build/gazebo_sim_nav/gazebo_sim_nav.egg-info/SOURCES.txt'
+writing manifest file 'build/gazebo_sim_nav/gazebo_sim_nav.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/lucas.coudrais/Documents/home/Documents/S9/RobMobile/S1_G3_Coudrais_Girardin/training-turtlebot-simulator-student-dev_ros2/simulation/gazebo/gazebo_sim_nav/build/gazebo_sim_nav/build
+creating /home/lucas.coudrais/Documents/home/Documents/S9/RobMobile/S1_G3_Coudrais_Girardin/training-turtlebot-simulator-student-dev_ros2/simulation/gazebo/gazebo_sim_nav/build/gazebo_sim_nav/build/lib
+creating /home/lucas.coudrais/Documents/home/Documents/S9/RobMobile/S1_G3_Coudrais_Girardin/training-turtlebot-simulator-student-dev_ros2/simulation/gazebo/gazebo_sim_nav/build/gazebo_sim_nav/build/lib/gazebo_sim_nav
+copying gazebo_sim_nav/__init__.py -> /home/lucas.coudrais/Documents/home/Documents/S9/RobMobile/S1_G3_Coudrais_Girardin/training-turtlebot-simulator-student-dev_ros2/simulation/gazebo/gazebo_sim_nav/build/gazebo_sim_nav/build/lib/gazebo_sim_nav
+running install
+running install_lib
+creating /home/lucas.coudrais/Documents/home/Documents/S9/RobMobile/S1_G3_Coudrais_Girardin/training-turtlebot-simulator-student-dev_ros2/simulation/gazebo/gazebo_sim_nav/install/gazebo_sim_nav/lib/python3.10/site-packages/gazebo_sim_nav
+copying /home/lucas.coudrais/Documents/home/Documents/S9/RobMobile/S1_G3_Coudrais_Girardin/training-turtlebot-simulator-student-dev_ros2/simulation/gazebo/gazebo_sim_nav/build/gazebo_sim_nav/build/lib/gazebo_sim_nav/__init__.py -> /home/lucas.coudrais/Documents/home/Documents/S9/RobMobile/S1_G3_Coudrais_Girardin/training-turtlebot-simulator-student-dev_ros2/simulation/gazebo/gazebo_sim_nav/install/gazebo_sim_nav/lib/python3.10/site-packages/gazebo_sim_nav
+byte-compiling /home/lucas.coudrais/Documents/home/Documents/S9/RobMobile/S1_G3_Coudrais_Girardin/training-turtlebot-simulator-student-dev_ros2/simulation/gazebo/gazebo_sim_nav/install/gazebo_sim_nav/lib/python3.10/site-packages/gazebo_sim_nav/__init__.py to __init__.cpython-310.pyc
+running install_data
+creating /home/lucas.coudrais/Documents/home/Documents/S9/RobMobile/S1_G3_Coudrais_Girardin/training-turtlebot-simulator-student-dev_ros2/simulation/gazebo/gazebo_sim_nav/install/gazebo_sim_nav/share/gazebo_sim_nav/launch
+copying launch/tb3_simulation_local_launch.py -> /home/lucas.coudrais/Documents/home/Documents/S9/RobMobile/S1_G3_Coudrais_Girardin/training-turtlebot-simulator-student-dev_ros2/simulation/gazebo/gazebo_sim_nav/install/gazebo_sim_nav/share/gazebo_sim_nav/launch
+copying launch/tb3_simulation_launch.py -> /home/lucas.coudrais/Documents/home/Documents/S9/RobMobile/S1_G3_Coudrais_Girardin/training-turtlebot-simulator-student-dev_ros2/simulation/gazebo/gazebo_sim_nav/install/gazebo_sim_nav/share/gazebo_sim_nav/launch
+copying launch/bringup_without_nav_launch.py -> /home/lucas.coudrais/Documents/home/Documents/S9/RobMobile/S1_G3_Coudrais_Girardin/training-turtlebot-simulator-student-dev_ros2/simulation/gazebo/gazebo_sim_nav/install/gazebo_sim_nav/share/gazebo_sim_nav/launch
+copying launch/tb3_simulation_without_nav_local_launch.py -> /home/lucas.coudrais/Documents/home/Documents/S9/RobMobile/S1_G3_Coudrais_Girardin/training-turtlebot-simulator-student-dev_ros2/simulation/gazebo/gazebo_sim_nav/install/gazebo_sim_nav/share/gazebo_sim_nav/launch
+copying launch/tb3_simulation_without_nav_launch.py -> /home/lucas.coudrais/Documents/home/Documents/S9/RobMobile/S1_G3_Coudrais_Girardin/training-turtlebot-simulator-student-dev_ros2/simulation/gazebo/gazebo_sim_nav/install/gazebo_sim_nav/share/gazebo_sim_nav/launch
+creating /home/lucas.coudrais/Documents/home/Documents/S9/RobMobile/S1_G3_Coudrais_Girardin/training-turtlebot-simulator-student-dev_ros2/simulation/gazebo/gazebo_sim_nav/install/gazebo_sim_nav/share/gazebo_sim_nav/params
+copying params/nav2_params_empty.yaml -> /home/lucas.coudrais/Documents/home/Documents/S9/RobMobile/S1_G3_Coudrais_Girardin/training-turtlebot-simulator-student-dev_ros2/simulation/gazebo/gazebo_sim_nav/install/gazebo_sim_nav/share/gazebo_sim_nav/params
+copying params/nav2_params_local.yaml -> /home/lucas.coudrais/Documents/home/Documents/S9/RobMobile/S1_G3_Coudrais_Girardin/training-turtlebot-simulator-student-dev_ros2/simulation/gazebo/gazebo_sim_nav/install/gazebo_sim_nav/share/gazebo_sim_nav/params
+copying params/nav2_params_local_RPP.yaml -> /home/lucas.coudrais/Documents/home/Documents/S9/RobMobile/S1_G3_Coudrais_Girardin/training-turtlebot-simulator-student-dev_ros2/simulation/gazebo/gazebo_sim_nav/install/gazebo_sim_nav/share/gazebo_sim_nav/params
+copying params/nav2_params_BT.yaml -> /home/lucas.coudrais/Documents/home/Documents/S9/RobMobile/S1_G3_Coudrais_Girardin/training-turtlebot-simulator-student-dev_ros2/simulation/gazebo/gazebo_sim_nav/install/gazebo_sim_nav/share/gazebo_sim_nav/params
+creating /home/lucas.coudrais/Documents/home/Documents/S9/RobMobile/S1_G3_Coudrais_Girardin/training-turtlebot-simulator-student-dev_ros2/simulation/gazebo/gazebo_sim_nav/install/gazebo_sim_nav/share/gazebo_sim_nav/urdf
+copying urdf/turtlebot3_waffle.urdf -> /home/lucas.coudrais/Documents/home/Documents/S9/RobMobile/S1_G3_Coudrais_Girardin/training-turtlebot-simulator-student-dev_ros2/simulation/gazebo/gazebo_sim_nav/install/gazebo_sim_nav/share/gazebo_sim_nav/urdf
+creating /home/lucas.coudrais/Documents/home/Documents/S9/RobMobile/S1_G3_Coudrais_Girardin/training-turtlebot-simulator-student-dev_ros2/simulation/gazebo/gazebo_sim_nav/install/gazebo_sim_nav/share/gazebo_sim_nav/worlds
+copying worlds/js_world_room_local2bis.model -> /home/lucas.coudrais/Documents/home/Documents/S9/RobMobile/S1_G3_Coudrais_Girardin/training-turtlebot-simulator-student-dev_ros2/simulation/gazebo/gazebo_sim_nav/install/gazebo_sim_nav/share/gazebo_sim_nav/worlds
+copying worlds/js_world_room.model -> /home/lucas.coudrais/Documents/home/Documents/S9/RobMobile/S1_G3_Coudrais_Girardin/training-turtlebot-simulator-student-dev_ros2/simulation/gazebo/gazebo_sim_nav/install/gazebo_sim_nav/share/gazebo_sim_nav/worlds
+copying worlds/js_world_room_local2.model -> /home/lucas.coudrais/Documents/home/Documents/S9/RobMobile/S1_G3_Coudrais_Girardin/training-turtlebot-simulator-student-dev_ros2/simulation/gazebo/gazebo_sim_nav/install/gazebo_sim_nav/share/gazebo_sim_nav/worlds
+copying worlds/waffle.model -> /home/lucas.coudrais/Documents/home/Documents/S9/RobMobile/S1_G3_Coudrais_Girardin/training-turtlebot-simulator-student-dev_ros2/simulation/gazebo/gazebo_sim_nav/install/gazebo_sim_nav/share/gazebo_sim_nav/worlds
+copying worlds/js_world_room_local.model -> /home/lucas.coudrais/Documents/home/Documents/S9/RobMobile/S1_G3_Coudrais_Girardin/training-turtlebot-simulator-student-dev_ros2/simulation/gazebo/gazebo_sim_nav/install/gazebo_sim_nav/share/gazebo_sim_nav/worlds
+creating /home/lucas.coudrais/Documents/home/Documents/S9/RobMobile/S1_G3_Coudrais_Girardin/training-turtlebot-simulator-student-dev_ros2/simulation/gazebo/gazebo_sim_nav/install/gazebo_sim_nav/share/gazebo_sim_nav/maps
+copying maps/js_custom_map_local2.yaml -> /home/lucas.coudrais/Documents/home/Documents/S9/RobMobile/S1_G3_Coudrais_Girardin/training-turtlebot-simulator-student-dev_ros2/simulation/gazebo/gazebo_sim_nav/install/gazebo_sim_nav/share/gazebo_sim_nav/maps
+copying maps/js_custom_map_local2.yaml (copy).pgm -> /home/lucas.coudrais/Documents/home/Documents/S9/RobMobile/S1_G3_Coudrais_Girardin/training-turtlebot-simulator-student-dev_ros2/simulation/gazebo/gazebo_sim_nav/install/gazebo_sim_nav/share/gazebo_sim_nav/maps
+copying maps/js_custom_map_local.pgm -> /home/lucas.coudrais/Documents/home/Documents/S9/RobMobile/S1_G3_Coudrais_Girardin/training-turtlebot-simulator-student-dev_ros2/simulation/gazebo/gazebo_sim_nav/install/gazebo_sim_nav/share/gazebo_sim_nav/maps
+copying maps/js_custom_map_local.yaml -> /home/lucas.coudrais/Documents/home/Documents/S9/RobMobile/S1_G3_Coudrais_Girardin/training-turtlebot-simulator-student-dev_ros2/simulation/gazebo/gazebo_sim_nav/install/gazebo_sim_nav/share/gazebo_sim_nav/maps
+copying maps/js_custom_map_local2.pgm -> /home/lucas.coudrais/Documents/home/Documents/S9/RobMobile/S1_G3_Coudrais_Girardin/training-turtlebot-simulator-student-dev_ros2/simulation/gazebo/gazebo_sim_nav/install/gazebo_sim_nav/share/gazebo_sim_nav/maps
+creating /home/lucas.coudrais/Documents/home/Documents/S9/RobMobile/S1_G3_Coudrais_Girardin/training-turtlebot-simulator-student-dev_ros2/simulation/gazebo/gazebo_sim_nav/install/gazebo_sim_nav/share/gazebo_sim_nav/rviz
+copying rviz/nav2_local_DWB.rviz -> /home/lucas.coudrais/Documents/home/Documents/S9/RobMobile/S1_G3_Coudrais_Girardin/training-turtlebot-simulator-student-dev_ros2/simulation/gazebo/gazebo_sim_nav/install/gazebo_sim_nav/share/gazebo_sim_nav/rviz
+copying rviz/nav2_namespaced_view.rviz -> /home/lucas.coudrais/Documents/home/Documents/S9/RobMobile/S1_G3_Coudrais_Girardin/training-turtlebot-simulator-student-dev_ros2/simulation/gazebo/gazebo_sim_nav/install/gazebo_sim_nav/share/gazebo_sim_nav/rviz
+copying rviz/nav2_mapping_empty.rviz -> /home/lucas.coudrais/Documents/home/Documents/S9/RobMobile/S1_G3_Coudrais_Girardin/training-turtlebot-simulator-student-dev_ros2/simulation/gazebo/gazebo_sim_nav/install/gazebo_sim_nav/share/gazebo_sim_nav/rviz
+copying rviz/nav2_default_view.rviz -> /home/lucas.coudrais/Documents/home/Documents/S9/RobMobile/S1_G3_Coudrais_Girardin/training-turtlebot-simulator-student-dev_ros2/simulation/gazebo/gazebo_sim_nav/install/gazebo_sim_nav/share/gazebo_sim_nav/rviz
+creating /home/lucas.coudrais/Documents/home/Documents/S9/RobMobile/S1_G3_Coudrais_Girardin/training-turtlebot-simulator-student-dev_ros2/simulation/gazebo/gazebo_sim_nav/install/gazebo_sim_nav/share/ament_index
+creating /home/lucas.coudrais/Documents/home/Documents/S9/RobMobile/S1_G3_Coudrais_Girardin/training-turtlebot-simulator-student-dev_ros2/simulation/gazebo/gazebo_sim_nav/install/gazebo_sim_nav/share/ament_index/resource_index
+creating /home/lucas.coudrais/Documents/home/Documents/S9/RobMobile/S1_G3_Coudrais_Girardin/training-turtlebot-simulator-student-dev_ros2/simulation/gazebo/gazebo_sim_nav/install/gazebo_sim_nav/share/ament_index/resource_index/packages
+copying resource/gazebo_sim_nav -> /home/lucas.coudrais/Documents/home/Documents/S9/RobMobile/S1_G3_Coudrais_Girardin/training-turtlebot-simulator-student-dev_ros2/simulation/gazebo/gazebo_sim_nav/install/gazebo_sim_nav/share/ament_index/resource_index/packages
+copying package.xml -> /home/lucas.coudrais/Documents/home/Documents/S9/RobMobile/S1_G3_Coudrais_Girardin/training-turtlebot-simulator-student-dev_ros2/simulation/gazebo/gazebo_sim_nav/install/gazebo_sim_nav/share/gazebo_sim_nav
+running install_egg_info
+Copying build/gazebo_sim_nav/gazebo_sim_nav.egg-info to /home/lucas.coudrais/Documents/home/Documents/S9/RobMobile/S1_G3_Coudrais_Girardin/training-turtlebot-simulator-student-dev_ros2/simulation/gazebo/gazebo_sim_nav/install/gazebo_sim_nav/lib/python3.10/site-packages/gazebo_sim_nav-0.0.0-py3.10.egg-info
+running install_scripts
+Installing NavLoop script to /home/lucas.coudrais/Documents/home/Documents/S9/RobMobile/S1_G3_Coudrais_Girardin/training-turtlebot-simulator-student-dev_ros2/simulation/gazebo/gazebo_sim_nav/install/gazebo_sim_nav/lib/gazebo_sim_nav
+writing list of installed files to '/home/lucas.coudrais/Documents/home/Documents/S9/RobMobile/S1_G3_Coudrais_Girardin/training-turtlebot-simulator-student-dev_ros2/simulation/gazebo/gazebo_sim_nav/build/gazebo_sim_nav/install.log'

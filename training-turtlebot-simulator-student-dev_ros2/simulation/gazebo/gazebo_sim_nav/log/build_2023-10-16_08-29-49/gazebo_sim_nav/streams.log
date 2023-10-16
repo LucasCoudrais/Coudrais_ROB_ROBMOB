@@ -1,0 +1,23 @@
+[1.261s] Invoking command in '/home/lucas.coudrais/Documents/home/Documents/S9/RobMobile/S1_G3_Coudrais_Girardin/training-turtlebot-simulator-student-dev_ros2/simulation/gazebo/gazebo_sim_nav': HISTTIMEFORMAT=%F %T PYTHONPATH=/home/lucas.coudrais/Documents/home/Documents/S9/RobMobile/S1_G3_Coudrais_Girardin/training-turtlebot-simulator-student-dev_ros2/simulation/gazebo/gazebo_sim_nav/build/gazebo_sim_nav/prefix_override:/home/lucas.coudrais/Documents/home/Documents/S9/RobMobile/S1_G3_Coudrais_Girardin/training-turtlebot-simulator-student-dev_ros2/simulation/gazebo/gazebo_sim_nav/install/gazebo_sim_nav/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base build/gazebo_sim_nav build --build-base /home/lucas.coudrais/Documents/home/Documents/S9/RobMobile/S1_G3_Coudrais_Girardin/training-turtlebot-simulator-student-dev_ros2/simulation/gazebo/gazebo_sim_nav/build/gazebo_sim_nav/build install --record /home/lucas.coudrais/Documents/home/Documents/S9/RobMobile/S1_G3_Coudrais_Girardin/training-turtlebot-simulator-student-dev_ros2/simulation/gazebo/gazebo_sim_nav/build/gazebo_sim_nav/install.log --single-version-externally-managed
+[1.618s] running egg_info
+[1.620s] writing build/gazebo_sim_nav/gazebo_sim_nav.egg-info/PKG-INFO
+[1.621s] writing dependency_links to build/gazebo_sim_nav/gazebo_sim_nav.egg-info/dependency_links.txt
+[1.623s] writing entry points to build/gazebo_sim_nav/gazebo_sim_nav.egg-info/entry_points.txt
+[1.624s] writing requirements to build/gazebo_sim_nav/gazebo_sim_nav.egg-info/requires.txt
+[1.625s] writing top-level names to build/gazebo_sim_nav/gazebo_sim_nav.egg-info/top_level.txt
+[1.640s] reading manifest file 'build/gazebo_sim_nav/gazebo_sim_nav.egg-info/SOURCES.txt'
+[1.643s] writing manifest file 'build/gazebo_sim_nav/gazebo_sim_nav.egg-info/SOURCES.txt'
+[1.644s] running build
+[1.644s] running build_py
+[1.646s] running install
+[1.646s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[1.646s]   warnings.warn(
+[1.647s] running install_lib
+[1.650s] running install_data
+[1.662s] running install_egg_info
+[1.664s] removing '/home/lucas.coudrais/Documents/home/Documents/S9/RobMobile/S1_G3_Coudrais_Girardin/training-turtlebot-simulator-student-dev_ros2/simulation/gazebo/gazebo_sim_nav/install/gazebo_sim_nav/lib/python3.10/site-packages/gazebo_sim_nav-0.0.0-py3.10.egg-info' (and everything under it)
+[1.670s] Copying build/gazebo_sim_nav/gazebo_sim_nav.egg-info to /home/lucas.coudrais/Documents/home/Documents/S9/RobMobile/S1_G3_Coudrais_Girardin/training-turtlebot-simulator-student-dev_ros2/simulation/gazebo/gazebo_sim_nav/install/gazebo_sim_nav/lib/python3.10/site-packages/gazebo_sim_nav-0.0.0-py3.10.egg-info
+[1.688s] running install_scripts
+[1.713s] Installing NavLoop script to /home/lucas.coudrais/Documents/home/Documents/S9/RobMobile/S1_G3_Coudrais_Girardin/training-turtlebot-simulator-student-dev_ros2/simulation/gazebo/gazebo_sim_nav/install/gazebo_sim_nav/lib/gazebo_sim_nav
+[1.716s] writing list of installed files to '/home/lucas.coudrais/Documents/home/Documents/S9/RobMobile/S1_G3_Coudrais_Girardin/training-turtlebot-simulator-student-dev_ros2/simulation/gazebo/gazebo_sim_nav/build/gazebo_sim_nav/install.log'
+[1.745s] Invoked command in '/home/lucas.coudrais/Documents/home/Documents/S9/RobMobile/S1_G3_Coudrais_Girardin/training-turtlebot-simulator-student-dev_ros2/simulation/gazebo/gazebo_sim_nav' returned '0': HISTTIMEFORMAT=%F %T PYTHONPATH=/home/lucas.coudrais/Documents/home/Documents/S9/RobMobile/S1_G3_Coudrais_Girardin/training-turtlebot-simulator-student-dev_ros2/simulation/gazebo/gazebo_sim_nav/build/gazebo_sim_nav/prefix_override:/home/lucas.coudrais/Documents/home/Documents/S9/RobMobile/S1_G3_Coudrais_Girardin/training-turtlebot-simulator-student-dev_ros2/simulation/gazebo/gazebo_sim_nav/install/gazebo_sim_nav/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base build/gazebo_sim_nav build --build-base /home/lucas.coudrais/Documents/home/Documents/S9/RobMobile/S1_G3_Coudrais_Girardin/training-turtlebot-simulator-student-dev_ros2/simulation/gazebo/gazebo_sim_nav/build/gazebo_sim_nav/build install --record /home/lucas.coudrais/Documents/home/Documents/S9/RobMobile/S1_G3_Coudrais_Girardin/training-turtlebot-simulator-student-dev_ros2/simulation/gazebo/gazebo_sim_nav/build/gazebo_sim_nav/install.log --single-version-externally-managed

@@ -1,0 +1,3 @@
+[console_scripts]
+NavLoop = gazebo_sim_nav.NavLoop:main
+
