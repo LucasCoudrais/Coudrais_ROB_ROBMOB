@@ -30,6 +30,7 @@ from global_planner_short_path_student.ShortPathMethods.AStar import AStar
 
 from nav2_simple_commander.robot_navigator import BasicNavigator
 
+from local_planner_srvs.srv import PathToGoal
 
 class ShortPathMng(Node):
     mapArray = ""
@@ -42,7 +43,7 @@ class ShortPathMng(Node):
     tflistener = ""
     MAX_VALUE = 1000000
 
-    def __init__(self, resolution=4, shortPathMethod='DIJKSTRA', isLocalPlanner=False, inflate_radius=0.3):
+    def __init__(self, resolution=4, shortPathMethod='DIJKSTRA', isLocalPlanner=True, inflate_radius=0.3):
         super().__init__('short_path_mng_node') # Call the constructor of the parent with the node name
         # init params
         self.shortPathMethodeSelected = shortPathMethod
@@ -433,17 +434,24 @@ class ShortPathMng(Node):
             ### goalQueue: queue of goal to acheive (Posestamped ros message)
             ###
             ### self.local_planner_service: service to call the local planner ( TODO need to be created on the ShortPathMng constructor)
-            #
-            #
-            #
-            #
-            #                       TODO
-            #
-            #
-            #
-            #
+            pg = self.PathGenerator()
+
+            pm = Path() 
+            pm.header.frame_id = "map"
+            pm.header.stamp = self.get_clock().now().to_msg()
+
+            pm.poses = list(goalQueue.queue)
+            print(list(goalQueue.queue))
+
+
+            response = pg.send_request(pm)
+
+            pg.get_logger().info(str(response.success))
+
+            pg.destroy_node()
             ###
-            print('')
+                       
+            print('------------------------------------------------------')
         else:
             while not goalQueue.empty():              
                 self.navigator.goToPose(goalQueue.get())
@@ -471,10 +479,33 @@ class ShortPathMng(Node):
         goal.pose.orientation.w = 0.999278639063
 
         return goal
+        
+    class PathGenerator(Node):
+        """
+            Send a simple path to the service 
+        """
+
+        def __init__(self):
+            super().__init__('testPathGenerator')
+    
+            self.cli = self.create_client(PathToGoal, 'pathService')
+            while not self.cli.wait_for_service(timeout_sec=1.0):
+                self.get_logger().info('service not available, waiting again...')
+            self.req = PathToGoal.Request()
+
+
+        def send_request(self, path):
+            self.req.path_to_goal = path
+
+            self.future = self.cli.call_async(self.req)
+            rclpy.spin_until_future_complete(self, self.future)
+            return self.future.result()  
+
+
 
 def main(args=None):
     rclpy.init(args=args)   # Initialized the rclpy lib
-    mng = ShortPathMng(inflate_radius=0.3,) # Create the node
+    mng = ShortPathMng(inflate_radius=0.3) # Create the node
     rclpy.spin(mng)  # Execute and block until the contexte is shutdown, also to keep alive node and use associated callback function
     # Destroy the node explicitly
     # (optional - otherwise it will be done automatically

@@ -262,7 +262,7 @@ class LocalPlanner(Node):
             #TODO for students : calculate angle . To compute shortest angle use method shortestAngleDiff defined before
             quaternion = [self.pathPoses[-1].pose.orientation.x, self.pathPoses[-1].pose.orientation.y, self.pathPoses[-1].pose.orientation.z, self.pathPoses[-1].pose.orientation.w]
             roll, pitch, yaw = euler_from_quaternion(quaternion)
-            angle = self.shortest_angle_diff(self.curPose2D.theta, yaw)
+            angle = self.shortest_angle_diff(yaw, self.curPose2D.theta)
 
             return angle       
         else:
@@ -285,9 +285,9 @@ class LocalPlanner(Node):
 
         elif (dist < self.Destination_eps) and len(self.pathPoses) == 1:
             if fabs(finalOrientation) >= self.Angle_eps:
-                state = "Last Goal pose (position + orientation) Reached"  #TODO for students : return string matching with the state
-            else:
                 state = "Last Goal position Reached"  #TODO for students : return string matching with the state
+            else:
+                state = "Last Goal pose (position + orientation) Reached"  #TODO for students : return string matching with the state
 
             self.get_logger().info("# %s : X = %.2f ; Y = %.2f "  % (state, self.pathPoses[0].pose.position.x, self.pathPoses[0].pose.position.y))
             return state
