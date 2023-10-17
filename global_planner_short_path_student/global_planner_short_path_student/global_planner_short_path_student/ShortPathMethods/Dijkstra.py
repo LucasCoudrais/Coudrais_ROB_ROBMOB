@@ -30,6 +30,7 @@ class Dijsktra(AbstractShortPath):
     def goto(self, source, target, matrix, pub_marker, marker_container):        
         # In djikstra computation start from the source
         start = {'x': source['x'], 'y': source['y']}
+        end = {'x': target['x'], 'y': target['y']}
 
         frontier = []
         frontier.append(Queue())
@@ -52,8 +53,9 @@ class Dijsktra(AbstractShortPath):
                 # counter of number of iteration, only to see computation siz
 
                 # check that the current Neighbor has not be prev
-                if (str(next['x']) + '_' + str(next['y']) not in prev or 
-                    poids[str(next['x']) + '_' + str(next['y'])] < poids[str(current['x']) + '_' + str(current['y'])] + matrix[next['y']][next['x']]):
+                if (str(next['x']) + '_' + str(next['y']) not in prev):
+                    # or 
+                    # poids[str(next['x']) + '_' + str(next['y'])] < poids[str(current['x']) + '_' + str(current['y'])] + matrix[next['y']][next['x']]):
                     # create visual info
                     self.createFontierUnitMarkerPt(next, marker_container)
                     # Add the Neighbor to be processed
@@ -66,6 +68,10 @@ class Dijsktra(AbstractShortPath):
                     # Add the previous reference of the current Neighbor
                     prev[str(next['x']) + '_' + str(next['y'])] = str(current['x']) + '_' + str(current['y'])
                     poids[str(next['x']) + '_' + str(next['y'])] = poids[str(current['x']) + '_' + str(current['y'])] + matrix[next['y']][next['x']]
+                    if next['x'] == end['x'] and next['y'] == end['y']:
+                        frontier = []
+                        frontier.append(Queue())
+                        break
 
             # publish the visual markers
             pub_marker.publish(marker_container)

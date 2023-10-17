@@ -169,16 +169,16 @@ class ShortPathMng(Node):
                             new_inflated_map[current_index_y + j][current_index_x - i] = self.MAP_OBSTACLE_VALUE
                         j += 1
                     i += 1
-                    if (i == radius and j == radius):
-                        if current_index_y + j < self.map_height and current_index_x + i < self.map_width and not new_inflated_map[current_index_y + j][current_index_x + i] == self.MAP_OBSTACLE_VALUE:
-                            new_inflated_map[current_index_y + j][current_index_x + i] = 5
-                        if current_index_y - j >= 0 and current_index_x - i >= 0 and not new_inflated_map[current_index_y - j][current_index_x - i] == self.MAP_OBSTACLE_VALUE:
-                            new_inflated_map[current_index_y - j][current_index_x - i] = 5
-                        if current_index_y - j >= 0  and current_index_x + i < self.map_width and not new_inflated_map[current_index_y - j][current_index_x + i] == self.MAP_OBSTACLE_VALUE:
-                            new_inflated_map[current_index_y - j][current_index_x + i] = 5
-                        if current_index_y + j < self.map_height and current_index_x - i >= 0 and not new_inflated_map[current_index_y + j][current_index_x - i] == self.MAP_OBSTACLE_VALUE:
-                            new_inflated_map[current_index_y + j][current_index_x - i] = 5
-                
+
+                if current_index_y + radius < self.map_height and current_index_x + radius < self.map_width and not new_inflated_map[current_index_y + radius][current_index_x + radius] == self.MAP_OBSTACLE_VALUE:
+                    new_inflated_map[current_index_y + radius][current_index_x + radius] = 50
+                if current_index_y - radius >= 0 and current_index_x - radius >= 0 and not new_inflated_map[current_index_y - radius][current_index_x - radius] == self.MAP_OBSTACLE_VALUE:
+                    new_inflated_map[current_index_y - radius][current_index_x - radius] = 50
+                if current_index_y - radius >= 0  and current_index_x + radius < self.map_width and not new_inflated_map[current_index_y - radius][current_index_x + radius] == self.MAP_OBSTACLE_VALUE:
+                    new_inflated_map[current_index_y - radius][current_index_x + radius] = 50
+                if current_index_y + radius < self.map_height and current_index_x - radius >= 0 and not new_inflated_map[current_index_y + radius][current_index_x - radius] == self.MAP_OBSTACLE_VALUE:
+                    new_inflated_map[current_index_y + radius][current_index_x - radius] = 50         
+
         return new_inflated_map
 
     def resizeWithResolution(self, map, resolution):
